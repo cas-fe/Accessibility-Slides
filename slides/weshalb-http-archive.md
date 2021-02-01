@@ -2,7 +2,7 @@
 
 Auszug aus [Auswertung des HTTP Archive für 2019](https://almanac.httparchive.org/en/2019/accessibility) (5.8 Mio Webseiten):
 
-![Almanac Logo](../media/http-archive-2019.png)
+![Almanac Logo](media/http-archive-2019.png)
 
 <!-- .element class="custom-http-archive" -->
 
