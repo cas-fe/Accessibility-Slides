@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Slides for CAS frontend engineering accessibility lecture",
   "scripts": {
-    "start": "browser-sync --watch",
+    "start": "browser-sync --watch & rollup --config --watch",
+    "build": "rollup --config",
     "lint": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +21,17 @@
     "reveal.js": "^4.1.0"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.1.1",
     "browser-sync": "^2.26.14",
-    "prettier": "^2.2.1"
+    "husky": "^4.3.8",
+    "postcss": "^8.2.4",
+    "prettier": "^2.2.1",
+    "rollup": "^2.38.3",
+    "rollup-plugin-postcss": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm build"
+    }
   }
 }
