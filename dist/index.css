@@ -465,16 +465,46 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   overflow-y: auto;
 }
 
+/* Titles */
+.reveal h2,
+.reveal h3 {
+  text-transform: none;
+}
+
+.reveal h2.custom-topic {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
 .reveal h3 {
   margin-top: 40px;
 }
 
-.reveal .custom-logo {
-  max-width: 200px;
+/* Misc */
+.reveal ul {
+  display: block;
 }
+
+.reveal code {
+  color: #ff5722;
+}
+
 .reveal .custom-number {
   font-size: 400%;
 }
+
+/* Images */
+.reveal .custom-inline {
+  vertical-align: top;
+  margin-top: 0;
+  margin-left: 2em;
+  max-width: 25%;
+}
+.reveal .custom-right {
+  float: right;
+  width: 25%;
+}
+
 .reveal .custom-lawsuit-beyonce {
   float: left;
   width: 50%;
@@ -488,10 +518,18 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   width: 50%;
 }
 
-.reveal .custom-http-archive {
-  float: right;
-  width: 25%;
+.reveal .custom-hsr {
+  float: left;
+  width: 50%;
 }
-.reveal .custom-http-archive + ul {
-  display: block;
+.reveal .custom-hsr + .custom-hsr {
+  float: none;
+}
+
+.reveal .custom-tenon {
+  max-height: 25vh;
+}
+
+.reveal .custom-fire {
+  max-height: 33vh;
 }
