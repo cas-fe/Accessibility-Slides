@@ -5,7 +5,7 @@
 - Software-Entwickler
 - Informatiker ETH
 
-### ![AdNovum](media/adnovum.svg) <!-- .element class="custom-logo" -->
+### ![AdNovum](media/adnovum.svg) <!-- .element class="custom-inline" -->
 
 - Kernkompetenz: High-End Security & Software Engineering
 - Gegründet 1988 – Aktiengesellschaft

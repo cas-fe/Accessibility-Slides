@@ -4,7 +4,7 @@ Auszug aus [Auswertung des HTTP Archive für 2019](https://almanac.httparchive.o
 
 ![Almanac Logo](media/http-archive-2019.png)
 
-<!-- .element class="custom-http-archive" -->
+<!-- .element class="custom-right" -->
 
 - 4 out of every 5 sites have text which easily blends into the background, making it unreadable.
 - Almost one out of every three sites on mobile disable [zooming].
