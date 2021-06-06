@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/backflip/CAS-FE-Accessibility-Slides.git"
+    "url": "git+https://github.com/cas-fe/Accessibility-Slides.git"
   },
   "author": "Thomas Jaggi <thomas@responsive.ch> (https://responsive.ch)",
   "contributors": [
