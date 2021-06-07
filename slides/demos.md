@@ -1,3 +1,3 @@
 ## 8. Demo wichtiger Webseiten <!-- .element class="custom-topic" -->
 
-![Fire meme](media/fire.png) <!-- .element class="custom-fire" -->
+![Disaster Girl Meme: Girl smirking with burning building in background](media/fire.png) <!-- .element class="custom-fire" -->
