@@ -1,4 +1,4 @@
-## 6. Visuelle Aspekte <!-- .element class="custom-topic" -->
+## 5. Visuelle Aspekte <!-- .element class="custom-topic" -->
 
 Wichtige WCAG-Richtlinie: «[1.4 Distinguishable](https://www.w3.org/WAI/WCAG21/quickref/#distinguishable): Make it easier for users to see and hear content including separating foreground from background.»
 
