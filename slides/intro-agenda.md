@@ -6,4 +6,5 @@
 4. [WAI-ARIA für interaktive Elemente](#/aria)
 5. [Visuelle Aspekte](#/visual)
 6. [Automatisches Testing](#/automation)
-7. [Demo wichtiger Webseiten](#/demos)
+7. [Accessibility Overlays](#/overlays)
+8. [Demo wichtiger Webseiten](#/demos)
