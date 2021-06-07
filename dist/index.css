@@ -530,6 +530,11 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   max-height: 25vh;
 }
 
+.reveal .custom-accessibe {
+  float: right;
+  width: 50%;
+}
+
 .reveal .custom-fire {
   max-height: 33vh;
 }
