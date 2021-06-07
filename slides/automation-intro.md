@@ -1,4 +1,4 @@
-## 7. Automatisches Testing <!-- .element class="custom-topic" -->
+## 6. Automatisches Testing <!-- .element class="custom-topic" -->
 
 Mittels statischer Code-Analyse können sowohl Markup-Fehler als auch visuelle Probleme wie mangelnde Kontraste identifiziert werden.
 

@@ -1,4 +1,4 @@
-## Demo 3: Seitenstruktur
+## Demo 4: Seitenstruktur
 
 - [Nicht barrierefrei](https://cas-fe.github.io/Accessibility/demos/structure/structure-inaccessible.html)
 - [Barrierefrei](https://cas-fe.github.io/Accessibility/demos/structure/structure-accessible.html)
