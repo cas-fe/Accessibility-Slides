@@ -7,4 +7,5 @@
 5. [Visuelle Aspekte](#/visual)
 6. [Automatisches Testing](#/automation)
 7. [Accessibility Overlays](#/overlays)
-8. [Demo wichtiger Webseiten](#/demos)
+8. [Projektvorgehen](#/project-workflow)
+9. [Demo wichtiger Webseiten](#/demos)
