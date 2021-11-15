@@ -4,6 +4,6 @@ Auszug aus [Schweizer Accessibility-Studie Onlineshops](https://www.access-for-a
 
 - Hilfestellung bei Interaktionen: 36 von 41 Shops sind in diesem Bereich ungenügend.
 - Alle 11 Onlineshops, die [..] Multimediainhalte [wie Videos] einsetzen, erfüllen diese Anforderungen in keiner Weise.
-- Mehr als die Hälfte der getesteten Onlineshops weist Verbesserungsbedarf im Bereich Nicht-TextInhalte.
+- Mehr als die Hälfte der getesteten Onlineshops weist Verbesserungsbedarf im Bereich Nicht-TextInhalte auf.
 - 20 Onlineshops, die nur 1 von 5 möglichen Punkten im Bereich Syntax/Kompatibilität erzielen.
 - Die Tastaturbedienbarkeit lässt in vielen Onlineshops ebenfalls zu wünschen übrig.
