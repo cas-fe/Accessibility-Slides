@@ -80,3 +80,11 @@
 .reveal .custom-fire {
   max-height: 33vh;
 }
+
+.reveal .custom-avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  margin: 0 0.5rem 0 0;
+  vertical-align: middle;
+}

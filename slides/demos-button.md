@@ -1,4 +1,4 @@
-## Demo 8: DIY-Button
+## Demo 7: DIY-Button
 
 1. [Nicht barrierefrei](https://cas-fe.github.io/Accessibility/demos/aria/button-inaccessible.html)
 2. [Barrierefrei](https://cas-fe.github.io/Accessibility/demos/aria/button-accessible.html)

@@ -1,14 +1,12 @@
 ## Wie barrierefrei ist das Web?
 
-Auszug aus [Auswertung des HTTP Archive für 2019](https://almanac.httparchive.org/en/2019/accessibility) (5.8 Mio Webseiten):
+Auszug aus [Auswertung des HTTP Archive für 2020](https://almanac.httparchive.org/en/2020/accessibility) (7.5 Mio Webseiten):
 
-![Almanac Logo](media/http-archive-2019.png)
+![Almanac Logo](media/http-archive.png)
 
 <!-- .element class="custom-right" -->
 
-- 4 out of every 5 sites have text which easily blends into the background, making it unreadable.
-- Almost one out of every three sites on mobile disable [zooming].
-- 49.91% of pages still fail to provide alt attributes for some of their images, and 8.68% of pages never use them at all.
-- Only 24.5% of pages with tables were found to markup their tables with either of these [accessible] methods.
-- Only about a quarter (24.39%) of pages that use buttons or links include textual labels with these controls.
-- Only 22.33% of pages provide labels for all their form inputs.
+- **3/4** der Seiten haben **ungenügenden Farbkontrast**.
+- **1/3** der Seiten versuchen, Zooming auf Mobile zu deaktivieren.
+- **1/2** der Seiten haben **Bilder ohne Alternativtexte**.
+- **3/4** der Seiten haben **Formularfelder ohne Labels**.

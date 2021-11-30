@@ -1,9 +1,7 @@
-## Über (2)
+## Über: Thomas Jaggi
 
-### Thomas Jaggi
-
-- Selbständiger Entwickler, https://responsive.ch
-- langjähriger Frontend-Lead bei Unic
+- Selbständiger Entwickler, [responsive.ch](https://responsive.ch)
+- langjähriger Frontend-Lead bei [Unic](https://unic.com)
 - viele Barrierefreiheit-zertifizierte Projekte
 - Fokus auf Entwicklungsprozess
-- Mitgründer https://www.accessibility-developer-guide.com
+- Mitgründer [accessibility-developer-guide.com](https://www.accessibility-developer-guide.com)
