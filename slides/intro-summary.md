@@ -1,5 +1,5 @@
 ## Inhalt
 
-- Wie verhindert man grundlegende Probleme für eingeschränkte User?
+- Was sind grundlegende Probleme, welche eingeschränkte User auf Webseiten antreffen?
+- Wie verhindert man sie?
 - Wie testet man Barrierefreiheit?
-- Wo findet man relevante Informationen?
