@@ -1,8 +1,10 @@
 # CAS Frontend Engineering – Accessibility / Barrierefreiheit
 
-Vorlesungsfolien für den Accessibility-Teil von `Accessibility & SEO`: https://cas-fe.github.io/Accessibility-Slides/
+Vorlesungsfolien für den Accessibility-Teil von `Accessibility & SEO`.
 
-Fragen/Korrekturen via https://github.com/cas-fe/Accessibility-Slides/issues und https://github.com/cas-fe/Accessibility-Slides/pulls. Besten Dank!
+Link: https://cas-fe.github.io/Accessibility-Slides/
+
+Fragen/Korrekturen via [Issues](https://github.com/cas-fe/Accessibility-Slides/issues) und [Pull requests](https://github.com/cas-fe/Accessibility-Slides/pulls). Besten Dank!
 
 ## Development
 
