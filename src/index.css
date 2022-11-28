@@ -6,7 +6,11 @@
   --r-main-font-size: 30px;
 }
 
-.reveal .present[data-markdown] {
+.reveal section[data-markdown] {
+  padding: 1em;
+  box-sizing: border-box;
+}
+.reveal section[data-markdown].present {
   max-height: 100%;
   overflow-y: auto;
 }
@@ -35,12 +39,12 @@
 
 .reveal blockquote {
   font-family: Georgia, serif;
-  font-size: var(--r-heading2-size);
   box-shadow: none;
   text-align: left;
   padding: 0 0 0 1em;
   border-left: 0.05em solid;
   margin: 1em;
+  width: auto;
 }
 .reveal p:has(cite) {
   font-size: 0.5em;
@@ -54,7 +58,10 @@
   content: "– ";
 }
 
-.reveal .custom-number {
+.reveal .custom-quote-large {
+  font-size: 150%;
+}
+.reveal .custom-quote-xlarge {
   font-size: 400%;
 }
 
