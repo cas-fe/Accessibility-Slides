@@ -1,11 +1,13 @@
-# CAS Frontend Engineering – Accessibility
+# CAS Frontend Engineering – Accessibility / Barrierefreiheit
 
-Slides [WIP]
+Vorlesungsfolien für den Accessibility-Teil von `Accessibility & SEO`: https://cas-fe.github.io/Accessibility-Slides/
+
+Fragen/Korrekturen via https://github.com/cas-fe/Accessibility-Slides/issues und https://github.com/cas-fe/Accessibility-Slides/pulls. Besten Dank!
 
 ## Development
 
 - Install dependencies: `npm install`
-- Start server with live-reload bhavior: `npm start`
+- Start server with live-reload behavior: `npm start`
 
 ## Deployment
 
