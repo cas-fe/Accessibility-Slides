@@ -1,6 +1,6 @@
 ## 8. Projektvorgehen <!-- .element class="custom-topic" -->
 
-- Barrierefreiheit wird oft [auf einen späteren Zeitpunkt verschoben](https://www.adnovum.ch/de/unternehmen/blog/digitale_baustellen_vermeiden_dank_barrierefreiheit.html). Nice try.
+- Barrierefreiheit wird oft [auf einen späteren Zeitpunkt verschoben](https://www.adnovum.com/de/blog/digitale-baustellen-vermeiden-dank-barrierefreiheit). Nice try.
 - Barrierefreiheit ist grundsätzlich eine **funktionale Anforderung**.
 - Nichtberücksichtigung bedeutet, dass bis zu [1/5](/#/2/1) der Besucher die Webseite oder Applikation nicht korrekt nutzen können. Und kann gegen das Gesetz verstossen.
 - Erfolgreiche Projekte berücksichtigen Barrierefreiheit von Beginn weg.
