@@ -465,24 +465,26 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   font-weight: bold;
 }
 
-.reveal {
-  font-size: 30px;
+:root {
+  --r-heading-text-transform: none;
 }
 
-.reveal .present {
+.reveal {
+  --r-main-font-size: 30px;
+}
+
+.reveal .present[data-markdown] {
   max-height: 100%;
   overflow-y: auto;
 }
 
-/* Titles */
-.reveal h2,
-.reveal h3 {
-  text-transform: none;
+.reveal .slides {
+  text-align: left;
 }
 
+/* Titles */
 .reveal h2.custom-topic {
-  text-transform: uppercase;
-  font-size: 2em;
+  --r-heading2-size: 2em;
 }
 
 .reveal h3 {
@@ -496,6 +498,27 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 
 .reveal code {
   color: #ff5722;
+}
+
+.reveal blockquote {
+  font-family: Georgia, serif;
+  font-size: var(--r-heading2-size);
+  box-shadow: none;
+  text-align: left;
+  padding: 0 0 0 1em;
+  border-left: 0.05em solid;
+  margin: 1em;
+}
+.reveal p:has(cite) {
+  font-size: 0.5em;
+}
+.reveal cite {
+  opacity: 0.75;
+  font-family: var(--r-main-font);
+  font-style: normal;
+}
+.reveal cite::before {
+  content: "– ";
 }
 
 .reveal .custom-number {
