@@ -1,6 +1,6 @@
 ## Wie barrierefrei ist das Schweizer Web?
 
-Auszug aus [Schweizer Accessibility-Studie Onlineshops](https://www.access-for-all.ch/ch/projekte/publikationen/574-schweizer-accessibility-studie-onlineshops.html):
+Auszug aus [Schweizer Accessibility-Studie Onlineshops (2020)](https://access-for-all.ch/publikationen/accessibility-studie/accessibility-studie-2020/):
 
 - **Hilfestellung** bei Interaktionen: 36 von 41 Shops sind in diesem Bereich ungenügend.
 - Alle 11 Onlineshops, die [..] **Multimediainhalte** [wie Videos] einsetzen, erfüllen diese Anforderungen in keiner Weise.
