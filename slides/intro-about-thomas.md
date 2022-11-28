@@ -1,4 +1,4 @@
-## Über: Thomas Jaggi
+## Über: Thomas Jaggi ![Thomas](media/thomas.png) <!-- .element class="custom-avatar" -->
 
 - Selbständiger Entwickler, [responsive.ch](https://responsive.ch)
 - Langjähriger Frontend-Lead bei [Unic](https://unic.com)

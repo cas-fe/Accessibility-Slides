@@ -1,4 +1,4 @@
-## Über: Werner Hänggi
+## Über: Werner Hänggi ![Werner](media/werner.png) <!-- .element class="custom-avatar" -->
 
 - Software-Entwickler
 - Informatiker ETH
