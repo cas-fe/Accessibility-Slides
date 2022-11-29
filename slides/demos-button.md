@@ -9,6 +9,6 @@
 
 - Nutze native Element, wo immer möglich
 - Verwende `role="button"` und `tabindex="0"` für DIY-Button
-- Stelle sicher, dass DiY-Button per `enter` und `space` ausgelöst werden kann
+- Stelle sicher, dass DIY-Button per `enter` und `space` ausgelöst werden kann
 
 </div>

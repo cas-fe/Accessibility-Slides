@@ -10,5 +10,6 @@
 - Stelle sicher, dass der Fokus innerhalb des Modals bleibt
 - Verwende `role=“dialog”` für den Container und verknüpfe ihn via `aria-labelledby` mit dem Titel
 - Schliesse den Dialog auf `esc`
+- Fokussiere nach dem Schliessen das öffnende Element
 
 </div>
