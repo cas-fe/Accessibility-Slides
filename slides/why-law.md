@@ -16,6 +16,6 @@
 
 ### Kantone und Gemeinden
 
-«In praktisch allen Kantonen fehlen konkrete Richtlinien und Standards für die Umsetzung des BehiG im Bereich Accessibility. Durch das Fehlen kantonaler Richtlinien herrscht in den Gemeinden eine grosse Unsicherheit.» – [Access for all](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
+«In praktisch allen Kantonen fehlen konkrete Richtlinien und Standards für die Umsetzung des BehiG im Bereich Accessibility. Durch das Fehlen kantonaler Richtlinien herrscht in den Gemeinden eine grosse Unsicherheit.» – [Quelle](https://edoc.unibas.ch/43988/1/pdf_de.pdf)
 
 </div>
