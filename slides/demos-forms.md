@@ -10,9 +10,10 @@
 ### Erkenntnisse
 
 - Verwende ein `<label>` für jedes Feld
-- Markiere obligatorische Felder mit Text innerhalb des Labels. Verwende `required` and `aria-required` Attribute als _progressive enhancement_.
+- Markiere obligatorische Felder mit Text innerhalb des Labels und verwende das `required` Attribut.
 - Teile dem User mit, wenn ein Input nicht valide ist:
   - Ergänze das Label mit einer Fehlermeldung und fokussiere das erste invalide Feld. Verwende `aria-invalid` zur zusätzlichen Indikation.
-  - Verwende `aria-describedby` um Fehlermeldungen mit dem entsprechenden Feld zu verbinden.
+  - Verwende `aria-describedby`, um Fehlermeldungen mit dem entsprechenden Feld zu verbinden.
+- Verwende native Formular-Elemente. `<select>`: [Rettung naht](https://microsoftedge.github.io/Demos/selectmenu/).
 
 </div>
