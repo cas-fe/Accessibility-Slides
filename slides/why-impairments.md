@@ -5,6 +5,6 @@ Einschränkungen bei:
 - Sehen
 - Hören
 - Sprache
-- Motorik
 - Kognitive Fähigkeiten
+- Motorik
 - ...
