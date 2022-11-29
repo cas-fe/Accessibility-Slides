@@ -1,7 +1,7 @@
-## ARIA: States and Properties
+## ARIA: Zustände und Eigenschaften / States and Properties
 
-- Schwierige Abgrenzung, teilweise unter gemeinsamem Begriff "Attribut"
-- Properties ändern tendenziell seltener während «life-cycle» der Applikation
+- **Schwierige Abgrenzung**, teilweise unter gemeinsamem Begriff _Attribut_
+- Eigenschaften ändern tendenziell seltener während **Lebenszyklus** der Applikation
 - Beispiele:
-  - State: `aria-expanded`, `aria-hidden`
-  - Property: `aria-describedby`, `aria-live`
+  - Zustand: `aria-expanded`, `aria-hidden`
+  - Eigenschaft: `aria-describedby`, `aria-live`

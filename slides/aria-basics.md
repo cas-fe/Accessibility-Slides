@@ -1,4 +1,4 @@
 ## ARIA: Grundlagen
 
-- spezielle **Attribute** im Markup
-- **kein** Einfluss auf Verhalten des Browsers, nur auf die Informationen, welche er an den Screenreader weiterleitet
+- Spezielle **Attribute** im Markup
+- Beeinflussen nur, welche Informationen via **Accessibility-API des Browsers** zur Verfügung gestellt werden
