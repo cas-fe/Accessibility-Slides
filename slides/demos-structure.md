@@ -8,7 +8,7 @@
 ### Erkenntnisse
 
 - Verwende versteckte `<hX>` Elemente, um Bereiche auszuzeichnen
-- Verwende die semantisch korrekten Markup-Elemente in Kombination mit ARIA-Rollen. Bsp: `<main role="main">…</main>`
-- Verwende Skiplinks, um dem User zu ermöglichen, Bereiche wie die Navigation zu überspringen
+- Verwende semantisch korrekte Markup-Elemente wie `<main>` und `<aside>` für die entsprechenden Bereiche
+- Verwende Skiplinks, um das Überspringen von Bereichen wie der Navigation zu ermöglichen
 
 </div>
