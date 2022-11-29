@@ -5,10 +5,14 @@
 3. [ARIA](https://cas-fe.github.io/Accessibility/demos/form/form-aria.html)
 4. [HTML5](https://cas-fe.github.io/Accessibility/demos/form/form-html5.html)
 
+<div class="fragment">
+
 ### Erkenntnisse
 
 - Verwende ein `<label>` für jedes Feld
-- Markiere obligatorische Felder mit Text innerhalb des Labels. Verwende `required` and `aria-required` Attribute als *progressive enhancement*.
+- Markiere obligatorische Felder mit Text innerhalb des Labels. Verwende `required` and `aria-required` Attribute als _progressive enhancement_.
 - Teile dem User mit, wenn ein Input nicht valide ist:
-    - Ergänze das Label mit einer Fehlermeldung und fokussiere das erste invalide Feld. Verwende `aria-invalid` zur zusätzlichen Indikation.
-    - Verwende `aria-describedby` um Fehlermeldungen mit dem entsprechenden Feld zu verbinden.
+  - Ergänze das Label mit einer Fehlermeldung und fokussiere das erste invalide Feld. Verwende `aria-invalid` zur zusätzlichen Indikation.
+  - Verwende `aria-describedby` um Fehlermeldungen mit dem entsprechenden Feld zu verbinden.
+
+</div>
