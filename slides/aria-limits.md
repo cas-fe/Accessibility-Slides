@@ -13,7 +13,9 @@
     <span class="button" role="button" tabindex="0">I'm a button, too!</span>
 
     <script>
-      // Trigger `click` event on `enter` and `space`
+      // Rough approximation: Trigger `click` event on `enter` and `space`.
+      // _Really_ mirroring the native behavior would be waaaay more complex.
+      // See https://adrianroselli.com/2022/04/brief-note-on-buttons-enter-and-space.html
       document.querySelector(".button").addEventListener(
         "keydown",
         function (event) {
