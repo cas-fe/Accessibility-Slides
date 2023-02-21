@@ -2,8 +2,8 @@
 
 Vorlesungsfolien für den Accessibility-Teil von `Accessibility & SEO`.
 
-Link: https://cas-fe.github.io/Accessibility-Slides/
-Druckansicht: https://cas-fe.github.io/Accessibility-Slides/?print-pdf
+- Link: https://cas-fe.github.io/Accessibility-Slides/
+- Druckansicht: https://cas-fe.github.io/Accessibility-Slides/?print-pdf
 
 Fragen/Korrekturen via [Issues](https://github.com/cas-fe/Accessibility-Slides/issues) und [Pull requests](https://github.com/cas-fe/Accessibility-Slides/pulls). Besten Dank!
 
