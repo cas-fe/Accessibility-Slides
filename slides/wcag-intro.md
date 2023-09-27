@@ -1,4 +1,4 @@
-## 3. WCAG 2.1 als Basis <!-- .element class="custom-topic" -->
+## 3. WCAG 2.1 als Basis
 
 - WCAG: Web Content Accessibility Guidelines
 - [W3C Recommendation](https://www.w3.org/TR/WCAG/)

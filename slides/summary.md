@@ -1,1 +1,1 @@
-## We can make a difference! <!-- .element class="custom-topic" -->
+## We can make a difference!

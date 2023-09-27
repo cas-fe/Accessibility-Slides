@@ -22,7 +22,29 @@
 }
 
 /* Titles */
-.reveal h2.custom-topic {
+@supports (-webkit-background-clip: text) {
+  .reveal h1,
+  .reveal h2 {
+    --custom-gradient-from: #004a9f;
+    --custom-gradient-to: #00bc42;
+
+    background: linear-gradient(to right, var(--custom-gradient-from), var(--custom-gradient-to));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  .reveal h2 {
+    --custom-gradient-from: #9f2d00;
+    --custom-gradient-to: #d68f00;
+  }
+  .reveal section[id] h2 {
+    --custom-gradient-from: #004a9f;
+    --custom-gradient-to: #00bc42;
+  }
+}
+
+.reveal section[id] {
   --r-heading2-size: 2em;
 }
 
@@ -31,7 +53,8 @@
 }
 
 /* Misc */
-.reveal ul {
+.reveal ul,
+.reveal ol {
   display: block;
 }
 
@@ -40,7 +63,6 @@
 }
 
 .reveal blockquote {
-  font-family: Georgia, serif;
   box-shadow: none;
   text-align: left;
   padding: 0 0 0 1em;

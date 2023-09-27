@@ -1,3 +1,3 @@
-## 5. Tastaturbedienbarkeit <!-- .element class="custom-topic" -->
+## 5. Tastaturbedienbarkeit
 
 WIP

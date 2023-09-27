@@ -1,4 +1,4 @@
-## 4. WAI-ARIA für interaktive Elemente <!-- .element class="custom-topic" -->
+## 4. WAI-ARIA für interaktive Elemente
 
 [![ARIA-Artikel im Accessibility Developer Guide](media/aria.png)](https://www.accessibility-developer-guide.com/knowledge/aria/) <!-- .element class="custom-right" -->
 

@@ -1,4 +1,4 @@
-## 8. Projektvorgehen <!-- .element class="custom-topic" -->
+## 8. Projektvorgehen
 
 <div class="fragment">
 

@@ -1,4 +1,4 @@
-## 7. Accessibility Overlays <!-- .element class="custom-topic" -->
+## 7. Accessibility Overlays
 
 [![accessiBe Startseite](media/accessibe.png)](https://accessibe.com) <!-- .element class="custom-accessibe" -->
 

@@ -1,4 +1,4 @@
-## 2. Zugang mit Screenreadern <!-- .element class="custom-topic" -->
+## 2. Zugang mit Screenreadern
 
 Assistive Software, welche Bildschirminformationen akustisch (oder taktil) wiedergibt.
 

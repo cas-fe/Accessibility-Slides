@@ -1,4 +1,4 @@
-## 1. Weshalb Barrierefreiheit? <!-- .element class="custom-topic" -->
+## 1. Weshalb Barrierefreiheit?
 
 > The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect. <!-- .element class="custom-quote-large" -->
 >

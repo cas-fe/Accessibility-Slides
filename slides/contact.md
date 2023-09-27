@@ -1,4 +1,4 @@
-## Kontakt <!-- .element class="custom-topic" -->
+## Kontakt
 
 ### ![Werner](media/werner.png) <!-- .element class="custom-avatar" --> Werner Hänggi
 
