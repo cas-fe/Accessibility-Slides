@@ -42,6 +42,12 @@
     --custom-gradient-from: #004a9f;
     --custom-gradient-to: #00bc42;
   }
+  .reveal h1::selection,
+  .reveal h2::selection {
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
+  }
 }
 
 .reveal section[id] {
