@@ -11,6 +11,6 @@
 - Gegründet 1988 – Aktiengesellschaft
 - Zürich (Hauptsitz), Bern, Lausanne, Budapest, Ho-Chi-Minh-Stadt, Singapur, Lissabon
 - 600 Mitarbeiter, 70% Ingenieure (ETH/Uni/FH)
-- [Stellenangebote](http://www.adnovum.ch/karriere_entrypoint/stellenangebote.html)
+- [Stellenangebote](https://www.adnovum.com/de/karriere/stellenangebote)
 
 </div>
