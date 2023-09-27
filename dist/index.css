@@ -645,3 +645,9 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   margin: 0 0.5rem 0 0;
   vertical-align: middle;
 }
+
+.reveal .custom-inclusive-design-toolkit img {
+  display: block;
+  max-height: 50vh;
+  margin: 0 auto;
+}
