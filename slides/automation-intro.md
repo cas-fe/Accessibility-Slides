@@ -1,4 +1,4 @@
-## 6. Automatisches Testing
+## 7. Automatisches Testing
 
 Mittels **statischer Code-Analyse** können sowohl Markup-Fehler als auch visuelle Probleme wie mangelnde Kontraste identifiziert werden.
 
