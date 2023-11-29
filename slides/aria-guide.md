@@ -6,4 +6,3 @@
 
 - https://www.accessibility-developer-guide.com
 - Source: https://github.com/Access4all/adg/
-- [Slack-Team beitreten](https://join.slack.com/t/a11y-dev-guide/shared_invite/zt-481zt544-HZCboLee6JL__6LnHl1N5w)
