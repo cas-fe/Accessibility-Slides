@@ -1,4 +1,4 @@
-## 3. WCAG 2.2 als Basis
+## 3. WCAG als Basis
 
 - WCAG: Web Content Accessibility Guidelines
 - [W3C Recommendation](https://www.w3.org/TR/WCAG/)
