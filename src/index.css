@@ -149,8 +149,7 @@
   vertical-align: middle;
 }
 
-.reveal .custom-inclusive-design-toolkit img {
-  display: block;
-  max-height: 50vh;
-  margin: 0 auto;
+.reveal .custom-disabilities.present {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
 }
