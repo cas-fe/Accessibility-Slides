@@ -7,7 +7,7 @@
     ```html
     <button type="button">I'm a button!</button>
     ```
-  - Do-it-yourself-Variante:
+  - [Do-it-yourself-Variante](https://cas-fe.github.io/Accessibility/demos/aria/button-accessible.html):
 
     ```html
     <span class="button" role="button" tabindex="0">I'm a button, too!</span>

@@ -1,4 +1,4 @@
-## 6. Manuelles Testing
+## 5. Manuelles Testing
 
 Wichtige Hilfsmittel <em>neben</em> Screenreader:
 
