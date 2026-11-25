@@ -1,14 +1,14 @@
 import "./fonts.css";
-import "reveal.js/dist/reset.css";
-import "reveal.js/dist/reveal.css";
-import "reveal.js/dist/theme/white.css";
+import "reveal.js/reset.css";
+import "reveal.js/reveal.css";
+import "reveal.js/theme/white.css";
 import "reveal.js/plugin/highlight/monokai.css";
 import "./index.css";
 
-import "reveal.js/dist/reveal.js";
-import "reveal.js/plugin/notes/notes.js";
-import "reveal.js/plugin/markdown/markdown.js";
-import "reveal.js/plugin/highlight/highlight.js";
+import Reveal from "reveal.js";
+import RevealNotes from "reveal.js/plugin/notes";
+import RevealMarkdown from "reveal.js/plugin/markdown";
+import RevealHighlight from "reveal.js/plugin/highlight";
 
 Reveal.initialize({
   hash: true,

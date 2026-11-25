@@ -1,12 +1,11 @@
 {
   "name": "cas-fe-accessibility-slides",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Slides for CAS frontend engineering accessibility lecture",
   "scripts": {
-    "start": "browser-sync --watch & rollup --config --watch",
-    "build": "rollup --config",
-    "lint": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -14,18 +13,14 @@
   },
   "author": "Thomas Jaggi <thomas@responsive.ch> (https://responsive.ch)",
   "contributors": [
-    "Werner Hänggi <Werner.Haenggi@AdNovum.CH>"
+    "Werner Hänggi <info@mintaccess.ch>"
   ],
   "license": "ISC",
   "dependencies": {
-    "reveal.js": "^4.1.0"
+    "reveal.js": "^6.0.2"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^11.1.1",
-    "browser-sync": "^2.26.14",
-    "postcss": "^8.2.4",
-    "prettier": "^2.2.1",
-    "rollup": "^2.38.3",
-    "rollup-plugin-postcss": "^4.0.0"
+    "prettier": "^3.10.1",
+    "vite": "^6.2.0"
   }
 }

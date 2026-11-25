@@ -10,7 +10,7 @@ Fragen/Korrekturen via [Issues](https://github.com/cas-fe/Accessibility-Slides/i
 ## Development
 
 - Install dependencies: `npm install`
-- Start server with live-reload behavior: `npm start`
+- Start Vite dev server: `npm run dev`
 
 ## Deployment
 
