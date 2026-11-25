@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>Barrierefreiheit – Eine Einführung</title>
+    <title>Barrierefreiheit - Eine Einführung</title>
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♿️</text></svg>"
+    />
   </head>
+
   <body>
     <div class="reveal">
       <div class="slides">
@@ -13,89 +19,800 @@
           <script type="text/template">
             # Barrierefreiheit (Accessibility, a11y)
 
-            Werner Hänggi, Thomas Jaggi
+            Werner Hänggi, Thomas Jaggi – 2. Dezember 2026
+
+            ![QRCode mit nachfolgender URL](media/qrcode.png)
+
+            [cas-fe.github.io/Accessibility-Slides/](https://cas-fe.github.io/Accessibility-Slides/) <!-- .element class="custom-url" -->
           </script>
         </section>
 
         <section>
-          <section data-markdown="slides/intro-summary.md" id="intro"></section>
-          <section data-markdown="slides/intro-agenda.md"></section>
-          <section data-markdown="slides/intro-about-werner.md"></section>
-          <section data-markdown="slides/intro-about-thomas.md"></section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Inhalt
+
+              1. **Weshalb** ist Barrierefreiheit wichtig?
+              2. **Wann** ist eine Webseite barrierefrei?
+              3. **Wie** barrierefrei ist das Web?
+              4. Wie **testet** man Barrierefreiheit?
+              5. Was sind typische **Probleme**? Wie löst man sie?
+              6. Wie mache ich barrierefreie **Projekte**?
+            </script>
+          </section>
         </section>
 
         <section>
-          <section data-markdown="slides/why-berners-lee.md" id="why"></section>
-          <section data-markdown="slides/why-bfs.md"></section>
-          <section data-markdown="slides/why-impairments.md"></section>
-          <section data-markdown="slides/why-impairments-you.md"></section>
-          <section data-markdown="slides/why-law.md"></section>
-          <section data-markdown="slides/why-law-us.md"></section>
-          <section data-markdown="slides/why-law-eu.md"></section>
-          <section data-markdown="slides/why-certification.md"></section>
-          <section data-markdown="slides/why-http-archive.md"></section>
-          <section data-markdown="slides/why-online-shops.md"></section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Über uns
+
+              <br>
+
+              ### ![Werner](media/werner.png) <!-- .element class="custom-avatar" --> Werner Hänggi
+
+              - Selbständiger Entwickler und Berater, [mintaccess.ch](https://www.mintaccess.ch)
+              - Informatiker ETH
+
+              ### ![Thomas](media/thomas.png) <!-- .element class="custom-avatar" --> Thomas Jaggi
+
+              - Selbständiger Entwickler und Berater, [responsive.ch](https://responsive.ch)
+              - Mitgründer [accessibility-developer-guide.com](https://www.accessibility-developer-guide.com)
+            </script>
+          </section>
         </section>
 
         <section>
-          <section data-markdown="slides/screenreader.md" id="screenreader"></section>
-          <section data-markdown="slides/demos-table.md"></section>
-          <section data-markdown="slides/demos-images.md"></section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 1. Weshalb ist Barrierefreiheit wichtig?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### a) Recht (CH): _Bund_
+
+              **Behindertengleichstellungsgesetz BehiG**: Dienstleistungen des Gemeinwesens müssen auch für Menschen mit Behinderungen zugänglich sein
+
+              **Behindertengleichstellungsverordnung**: Internetangebote des Bundes müssen so gestaltet sein, dass Menschen mit Behinderungen diese barrierefrei nutzen können
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### a) Recht (CH): _Kantone und Gemeinden_
+
+              > In praktisch allen Kantonen fehlen konkrete Richtlinien und Standards für die Umsetzung des BehiG im Bereich Accessibility. Durch das Fehlen kantonaler Richtlinien herrscht in den Gemeinden eine grosse Unsicherheit.»
+              >
+              > <cite>[Der hindernisfreie Zugang zu Bildung – Pflichten der Hochschule ](https://edoc.unibas.ch/43988/1/pdf_de.pdf)<cite>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### a) Recht (CH): _Zukunft_
+
+              - Laufende **Teilrevision** des Behindertengleichstellungsgesetz BehiG:
+
+              > Auch **private Anbieter** digitaler Dienstleistungen müssen ihre Leistungen so gestalten, dass Benachteiligungen verhindert, beseitigt oder verringert werden.
+              >
+              > <cite>[Botschaft zur Änderung des Behindertengleichstellungsgesetzes](https://www.fedlex.admin.ch/eli/fga/2025/300/de)<cite>
+
+              <div class="fragment">
+
+              - Abgelehnte Motion [Digitale Barrierefreiheit im Privatsektor](https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20233582) im Nationalrat
+
+              - Laufende parlamentarische Diskussion von [Inklusions-Initiative](https://www.inklusions-initiative.ch) und Gegenvorschlag
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### a) Recht (EU)
+
+              - Der **European Accessibility Act EAA** (seit Ende Juni 2025):
+
+              > Die Richtlinie verpflichtet die Mitgliedsstaaten unter anderem dazu, **den gesamten Online-Handel für Verbraucherinnen und Verbraucher barrierefrei zu gestalten**.
+              >
+              > <cite>[Deutsche Bundesfachstelle Barrierefreiheit](https://www.bundesfachstelle-barrierefreiheit.de/DE/Fachwissen/Produkte-und-Dienstleistungen/European-Accessibility-Act/european-accessibility-act_node.html)<cite>
+
+              <aside class="notes">
+                Bis am 28. Juni 2022 müssen alle Mitgliedstaaten die rechtlichen Grundlagen für den EAA schaffen und ab 2025 sind diese anzuwenden.
+
+                https://access-for-all.ch/eu-richtlinie-anforderungen-zur-barrierefreiheit-fuer-produkte-und-dienstleistungen/
+
+                - Ausnahmen für kleine Unternehmungen mit weniger als zehn Mitarbeitenden und einem Jahresumsatz von unter zwei Millionen Euro (je nach Mitgliedsstaat)
+                - Geldstrafen von bis zu 100’000 Euro oder andere Sanktionen möglich (Ausschluss von Beschaffungsvorgängen)
+                - Betroffene Personen können gegen Unternehmen klagen
+              </aside>
+
+              <div class="fragment">
+
+              - Leseempfehlung: [European Accessibility Act: Barrierefreiheit für die Privatwirtschaft](https://tollwerk.de/blog/european-accessibility-act-eaa-barrierefreiheitsstaerkungsgesetz-bfsg)
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### a) Recht (USA)
+
+              [![Beyoncé's Parkwood Entertainment sued over website accessibility](media/lawsuit-beyonce.png)](https://www.theguardian.com/music/2019/jan/04/beyonce-parkwood-entertainment-sued-over-website-accessibility) <!-- .element class="custom-lawsuit-beyonce" -->
+
+              [![Reminder: Airlines Should Be Actively Working on Digital Accessibility](media/lawsuit-airlines.png)](https://www.levelaccess.com/airlines-should-be-working-on-digital-accessibility/) <!-- .element class="custom-lawsuit-airlines" -->
+
+              [![Supreme Court lets blind man sue Domino's over website accessibility](media/lawsuit-dominos.png)](https://www.zdnet.com/article/supreme-court-lets-blind-man-sue-dominos-over-website-accessibility/) <!-- .element class="custom-lawsuit-dominos" -->
+
+              [![Court finds Domino’s Pizza Violated the ADA by Having an Inaccessible Website and Orders WCAG Complianc](media/lawsuit-dominos-verdict.png)](https://www.jdsupra.com/legalnews/court-finds-domino-s-pizza-violated-the-2182635/)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### b) Tim Berners-Lee
+
+              > The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect. <!-- .element class="custom-quote-large" -->
+              >
+              > <cite>Tim Berners-Lee, W3C-Direktor und "Erfinder" des Internets</cite>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### c) Karma
+
+              > 1/5 <!-- .element class="custom-quote-xlarge" -->
+              >
+              > <cite>[Bundesamt für Statistik](https://statistik.admin.ch/de/themen/wirtschaftliche-soziale-situation-bevoelkerung/gleichstellung-menschen-behinderungen-6): «[...] haben 1,8 Millionen der zuhause lebenden Personen ab 16 Jahren ein dauerhaftes Gesundheitsproblem und sind in ihrem Alltag (stark oder etwas) einschränkt»</cite>
+            </script>
+          </section>
+          <section
+            data-markdown
+            data-background="media/inclusive-design-toolkit.jpg"
+            data-background-size="contain"
+            data-background-position="right"
+          >
+            <script type="text/template">
+              <!-- .element class="custom-disabilities" -->
+
+              ### d) Eigennutz
+
+              [![Grafik aus dem Microsoft Inclusive Design Toolkit, welche den Unterschied zwischen permanenten, temporären und situationsbedingten Einschränkungen aufzeigt](media/inclusive-design-toolkit.jpg)](https://inclusive.microsoft.design/)  <!-- .element class="visually-hidden" -->
+            </script>
+          </section>
         </section>
 
         <section>
-          <section data-markdown="slides/wcag-intro.md" id="wcag"></section>
-          <section data-markdown="slides/wcag-structure.md"></section>
-          <section data-markdown="slides/wcag-example.md"></section>
-          <section data-markdown="slides/demos-forms.md"></section>
-          <section data-markdown="slides/demos-structure.md"></section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 2. Wann ist eine Webseite barrierefrei?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Definition der W3C
+
+              > Web accessibility means that websites, tools, and technologies are designed and developed so that **people with disabilities can use them**. More specifically, people can:
+              > - perceive, understand, navigate, and interact with the Web
+              > - contribute to the Web
+              >
+              > Web accessibility encompasses all disabilities that affect access to the Web, including: **auditory, cognitive, neurological, physical, speech, visual**
+              >
+              > <cite>[W3C WAI](https://www.w3.org/WAI/fundamentals/accessibility-intro/)</cite>
+
+              <aside class="notes">
+                Hörbehinderungen, kognitive Behinderungen, neurologische Erkrankungen, körperliche Behinderungen,
+                Sprachbehinderungen und Sehbehinderungen.
+              </aside>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Beispielhafte Fragen
+
+              Kann meine Applikation oder Webseite
+              - **ohne Maus** bedient werden?
+              - bei **eingeschränkter Seh-/Hörfähigkeit** genutzt werden?
+              - von einem **Screenreader** verstanden werden?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Formale Vorgaben: WCAG
+
+              - WCAG: Web Content Accessibility Guidelines
+              - [W3C Recommendation](https://www.w3.org/TR/WCAG/)
+
+              > Following these guidelines will make content more **accessible to a wider range of people with disabilities**, including accommodations for blindness and low vision, deafness and hearing loss, limited movement, speech disabilities, photosensitivity, and combinations of these, and some accommodation for learning disabilities and cognitive limitations; but will not address every user need for people with these disabilities. [...] Following these guidelines will also often make Web content **more usable to users in general**.
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Wie die WCAG strukturiert sind
+
+              - 4 **Principles** (Prinzipien)
+
+                - perceivable (wahrnehmbar)
+                - operable (bedienbar)
+                - understandable (verständlich)
+                - robust
+
+              - 13 **Guidelines** (Richtlinien)
+              - Testbare **Success Criteria** (Erfolgskriterien) für jede Richtlinie
+              - 3 **Levels of Conformance** (Konformitätsstufen) für Erfolgskriterien: A (tiefstes), AA, AAA (höchstes)
+              - **Sufficient and Advisory Techniques** (ausreichende und empfohlene Techniken) zur Erfüllung eines Kriteriums
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### WCAG-Beispiel: Labels in Formularen
+
+              Beispiel eines Erfolgskriteriums im Zusammenhang mit Formularen:
+
+              - [**Principle** 3: Understandable](https://www.w3.org/TR/WCAG22/#understandable): Information and the operation of user interface must be understandable.
+                - [**Guideline** 3.3 Input Assistance](https://www.w3.org/TR/WCAG22/#input-assistance): Help users avoid and correct mistakes.
+                  - [**Success Criterion** 3.3.2 Labels or Instructions](https://www.w3.org/TR/WCAG22/#labels-or-instructions): Labels or instructions are provided when content requires user input. (Level A)
+                    - [**Sufficient Techniques** for 3.3.2 - Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=332#labels-or-instructions)
+                      - [G131: Providing descriptive labels](https://www.w3.org/WAI/WCAG22/Techniques/general/G131.html)
+                      - [H90: Indicating required form controls using label or legend](https://www.w3.org/WAI/WCAG22/Techniques/html/H90.html)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### WCAG-Beispiel: Visuelle Aspekte
+
+              Wichtige WCAG-Richtlinie: «[1.4 Distinguishable](https://www.w3.org/WAI/WCAG22/quickref/#distinguishable): Make it easier for users to see and hear content including separating foreground from background.»
+
+              Kriterien (Auswahl):
+              - [1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=141#distinguishable): **Color is not used as the only visual means** of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A):
+                - [G183](https://www.w3.org/WAI/WCAG22/Techniques/general/G183.html): Using a contrast ratio of 3:1 with surrounding text […] for links or controls where color alone is used to identify them
+              - [1.4.3 Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=143#contrast-minimum): The visual presentation of text and images of text has a **contrast ratio of at least 4.5:1**, except for the following: … (Level AA)
+              - [2.5.8 Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=258#target-size-minimum): The size of the target for pointer inputs is **at least 24 by 24 CSS pixels**, except where: … (Level AA)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### _Einschub_: Visuelle Aspekte
+
+              - Bis zu 4% der Menschen sind **farbenblind**.
+
+              <div class="fragment">
+
+                - Vor allem Männer.
+
+              </div>
+
+              <figure class="fragment">
+
+                - Und alle Robben.
+
+                ![Neophoca Cinerea](https://upload.wikimedia.org/wikipedia/commons/e/e4/Neophoca_cinerea.JPG)
+
+                <figcaption>
+                  <cite>By User <a href="https://en.wikipedia.org/wiki/User:Bmh_ca" class="extiw" title="en:User:Bmh ca">Bmh ca</a> on <a class="external text" href="https://en.wikipedia.org">en.wikipedia</a> - Photo by <a href="https://en.wikipedia.org/wiki/User:bmh_ca" class="extiw" title="en:User:bmh ca">Brian M Hunt</a>., <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=227477">Link</a></cite>
+                </figcaption>
+              </figure>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### WCAG-Beispiel: Interaktive Aspekte
+
+              Kriterien (Auswahl):
+
+              - [2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=222#pause-stop-hide): […] For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, **there is a mechanism for the user to pause, stop, or hide it** […] (Level A)
+              - [2.5.8 Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=258#target-size-minimum): The size of the target for pointer inputs is **at least 24 by 24 CSS pixels**, except where: … (Level AA)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Mapping auf rechtliche Rahmenbedingungen
+
+              #### BehiG
+
+              - Referenz auf [eCH-0059 Accessibility Standard](https://ech.ch/de/ech/ech-0059/3.0)
+              - Enspricht aktuell **WCAG 2.1 AA**
+
+              #### EAA
+
+              - Referenz auf "Harmonised European Standard (HEN)" [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549)
+              - Enspricht aktuell **WCAG 2.2 AA**
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Zertifizierung
+
+              Stiftung «Zugang für alle»: unabhängige Zertifizierungsstelle für barrierefreie Websites
+
+              https://access-for-all.ch
+
+              ![Access for All Logo](media/access-for-all.svg) <!-- .element class="custom-inline" -->
+            </script>
+          </section>
         </section>
 
         <section>
-          <section data-markdown="slides/aria-intro.md" id="aria"></section>
-          <section data-markdown="slides/aria-basics.md"></section>
-          <section data-markdown="slides/aria-roles.md"></section>
-          <section data-markdown="slides/aria-states.md"></section>
-          <section data-markdown="slides/demos-autosuggest.md"></section>
-          <!-- <section data-markdown="slides/demos-tabs.md"></section> -->
-          <section data-markdown="slides/aria-limits.md"></section>
-          <!-- <section data-markdown="slides/demos-button.md"></section> -->
-          <section data-markdown="slides/aria-platform-native.md"></section>
-          <section data-markdown="slides/aria-platform.md"></section>
-          <!-- <section data-markdown="slides/demos-modal.md"></section> -->
-          <section data-markdown="slides/aria-frameworks.md"></section>
-          <section data-markdown="slides/aria-guide.md"></section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 3. Wie barrierefrei ist das Web?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Weltweit: 👎
+
+              Auszug aus [Auswertung des HTTP Archive für 2025](https://almanac.httparchive.org/en/2025/accessibility) (16 Mio Webseiten):
+
+              ![Almanac Logo](media/http-archive.png)
+
+              <!-- .element class="custom-right" -->
+
+              - **2/3** der Seiten haben **ungenügenden Farbkontrast**.
+              - **1/5** der Seiten versucht, Zooming auf Mobile zu deaktivieren.
+              - **1/3** der Bilder haben **keinen Alternativtext**.
+              - **2/3** der Seiten haben **Formularfelder ohne Labels**.
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### In der Schweiz: 👎 (1)
+
+              Auszug aus [Pilotstudie 2026: Barrierefreiheit digitaler Angebote in der Schweiz](https://berichte.studien.adis.ch/reports/b6db70e5-ac9a-4b00-a180-b6261ca71141/v1/de/study.html):
+
+              - Manuelle Prüfung Web: **23 von 25** Webangeboten sind nach der Gesamtbewertung **nicht ausreichend zugänglich**. Bei allen 25 wurde mindestens ein Mangel beobachtet.
+              - Automatisierte Prüfung Web: **89 von 94** Webangeboten mit ausgewähltem automatisiertem Ergebnis weisen **mindestens einen gemeldeten Verstoss auf**. Die Prüfung deckt nur maschinell prüfbare Anforderungen ab.
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### In der Schweiz: 👎 (2)
+
+              Auszug aus [Schweizer Accessibility-Studie Onlineshops (2020)](https://access-for-all.ch/publikationen/accessibility-studie/accessibility-studie-2020/):
+
+              - **Hilfestellung** bei Interaktionen: 36 von 41 Shops sind in diesem Bereich ungenügend.
+              - Alle 11 Onlineshops, die [..] **Multimediainhalte** [wie Videos] einsetzen, erfüllen diese Anforderungen in keiner Weise.
+              - Mehr als die Hälfte der getesteten Onlineshops weist Verbesserungsbedarf im Bereich **Nicht-Textinhalte** auf.
+              - 20 Onlineshops, die nur 1 von 5 möglichen Punkten im Bereich **Syntax/Kompatibilität** erzielen.
+              - Die **Tastaturbedienbarkeit** lässt in vielen Onlineshops ebenfalls zu wünschen übrig.
+            </script>
+          </section>
         </section>
 
-        <section data-markdown="slides/manual.md" id="manual"></section>
-
         <section>
-          <section data-markdown="slides/automation-intro.md" id="automation"></section>
-          <section data-markdown="slides/automation-example.md"></section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 4. Wie testet man Barrierefreiheit?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Browser Dev Tools: Accessibility Inspector
+
+              Informationen, welche der Browser unterstützenden Technologien wie Screenreadern zur Verfügung stellt.
+
+              Hilft bei der Beantwortung folgender Fragen:
+              - Ist mein Inhalt für Maschinen verständlich?
+              - Hat er eine **[semantisch](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) korrekte Struktur**?
+              - Haben meine Elemente **semantisch korrekte Rollen**?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              #### _Beispiel:_ Chromium Developer Tools
+
+              ![Screenshot von www.ost.ch mit Vivaldi Dev Tools Accessibility Tree](media/testing-browser-dev-tools.png)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Screenreader
+
+              Assistive Software, welche Bildschirminformationen akustisch (oder taktil) wiedergibt.
+
+              Verbreitete Screenreader:
+              - [NVDA](https://www.nvaccess.org/download/): Open-Source, Windows
+              - [JAWS](https://vispero.com/jaws-screen-reader-software/): Kommerziell, Windows
+              - [Orca](https://help.gnome.org/orca/): Open-Source, Linux (GNOME)
+              - [Narrator](https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator): Teil von Windows
+              - [TalkBack](https://support.google.com/accessibility/android/answer/6283677): Teil von Android
+              - [VoiceOver](https://www.apple.com/accessibility/features/?vision): Teil von macOS und iOS
+              ![VoiceOver for OS X. A feature that speaks for itself.](media/voiceover-claim.png) <!-- .element class="custom-inline" -->
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              #### _Beispiel:_ VoiceOver auf macOS
+
+              ![Screenshot von www.ost.ch mit macOS VoiceOver](media/testing-voiceover.png)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Tastatur
+
+              <figure>
+
+                ![Screenshot einer Tastatur mit markiertem Tab-Key](media/testing-tab-key.jpeg)
+
+                <figcaption>
+                  <cite>https://www.idownloadblog.com/2015/03/15/tab-key-between-buttons-mac-os-x/</cite>
+                </figcaption>
+              </figure>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Statische Analyse: _IDE_
+
+              [![Screenshot von axe-linter in Visual Studio Code](media/testing-ide-axe.png)](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Statische Analyse: _CI-Pipeline_
+
+              [![Screenshot von accessSniff in einer Konsole](media/testing-ci.png)](https://github.com/cas-fe/Accessibility-Testing)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Statische Analyse: _Beispiele_
+
+              - [axe](https://www.deque.com/axe/): _The Standard in Accessibility Testing_
+                - [Browser Extensions](https://www.deque.com/axe/devtools/extension/)
+                - [ESLint-Plugin](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) (nur JSX)
+                - [Editor-Extension](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter) (VS Code)
+              - [WAVE](https://wave.webaim.org/extension/): _Web Accessibility Evaluation Tool_
+                - Browser-Extension: [Vergleich mit axe](https://blog.scottlogic.com/2023/09/27/accessibility-tooling-wave-vs-axe.html)
+              - [HTML_CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/): _Check that your HTML code conforms to your coding standard_
+
+              Demo: [Node.js-Beispiel](https://github.com/cas-fe/Accessibility-Testing) mit axe und HTML_CodeSniffer
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Statische Analyse: _Trefferquote_
+
+              - Beispiel [inaccessible table](https://cas-fe.github.io/Accessibility/demos/table/table-inaccessible.html):
+                - WAVE und HTML_CodeSniffer erkennen _Layout table_.
+                - [Tenon](https://tenon.io) (deprecated) warnte zusätzlich _Implicit table headers_.
+                - Axe ist [happy](https://github.com/dequelabs/axe-core/issues/3011#issuecomment-863283657).
+              - Beispiel [inaccessible form](https://cas-fe.github.io/Accessibility/demos/form/form-inaccessible.html):
+                - axe, WAVE, HTML_CodeSniffer und Tenon finden alle Felder ohne Label.
+
+              <div class="fragment">
+
+              - Case in point: [Building the most inaccessible site possible with a perfect Lighthouse score](https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/)
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### ~~Overlays~~
+
+              [![accessiBe Startseite](media/accessibe.png)](https://accessibe.com) <!-- .element class="custom-accessibe" -->
+
+              - Versprechen: JavaScript einbauen und zurücklehnen
+              - Realität: [overlayfactsheet.com](https://overlayfactsheet.com)
+            </script>
+          </section>
         </section>
 
-        <section data-markdown="slides/overlays.md" id="overlays"></section>
-
-        <section data-markdown="slides/project-workflow.md" id="project-workflow"></section>
-
-        <section data-markdown="slides/demos.md" id="demos"></section>
-
         <section>
-          <section data-markdown="slides/summary.md" id="summary"></section>
-          <section data-markdown="slides/summary-questions.md"></section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 5. Was sind typische Probleme? Wie löst man sie?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### a) Man arbeitet gegen den Browser (1)
+
+              #### Problem
+
+              Native, barrierefreie Lösungen wie **Focus Outlines** werden manuell entfernt.
+
+              #### Folge
+
+              Nur User:innern mit einer Maus können [ein Element zuverlässig finden](https://cas-fe.github.io/Accessibility/demos/visual/focus-styles-inaccessible.html).
+
+              <div class="fragment">
+
+              #### Lösung
+
+              - Verwendung von [`:not(:focus-visible)`](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible) beim Entfernen von `outline`.
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### b) Man arbeitet gegen den Browser (2)
+
+              #### Problem
+
+              Elemente wie **Buttons** werden selber umgesetzt, statt native Elemente zu verwenden.
+
+              #### Folge
+
+              Nur User:innern mit einer Maus können [eine Aktion auslösen](https://cas-fe.github.io/Accessibility/demos/aria/button-inaccessible.html).
+
+              <div class="fragment">
+
+              #### Lösung
+
+              - Verwendung von [`button`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) für Buttons. 🤷‍♂️
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### c) Semantische Struktur fehlt (1)
+
+              #### Problem
+
+              **Seitenstruktur** kommuniziert keine Hierarchie.
+
+              #### Folgen
+
+              - Screenreader kann die wichtigen Inhalte [nicht finden](https://cas-fe.github.io/Accessibility/demos/structure/structure-inaccessible.html).
+              - Suchmaschine kann sie nicht priorisieren.
+
+              <div class="fragment">
+
+              #### Lösung
+
+              - Verwendung von [semantischen](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) Gruppierungselementen wie `main`, `aside`
+              - Konsistente Hierarchie von Überschriften: `h1` → `h2` → `h3`
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### d) Semantische Struktur fehlt (2)
+
+              #### Problem
+
+              **Tabelle** kommuniziert nur beschränkte Semantik.
+
+              #### Folge
+
+              Screenreader kann Tabelle [nicht navigieren](https://cas-fe.github.io/Accessibility/demos/table/table-inaccessible.html).
+
+              <div class="fragment">
+
+              #### Lösung
+
+              - Verwendung von [`scope`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th#scope)-Attribut
+              - Verwendung von [`caption`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### e) Text-Alternative fehlt
+
+              #### Problem
+
+              **Visuelle Inhalte** haben keine begleitende Text-Alternative.
+
+              #### Folge
+
+              Screenreader-User:innen können Inhalte [nicht verstehen](https://cas-fe.github.io/Accessibility/demos/images/images-inaccessible.html).
+
+              <div class="fragment">
+
+              #### Lösung
+
+              - Verwendung von visuell versteckten Alternativ-Texten
+              - Verstecken rein visueller Elemente vor Screenreader
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### f) Interaktive Elemente kommunizieren keine Zustandsänderung (1)
+
+              #### Problem
+
+              - **Formularvalidierung** wird nicht kommuniziert.
+              - Es werden **nicht-native Formularelemente** verwendet.
+
+              #### Folge
+
+              Screenreader kann Formular [nicht korrekt ausfüllen](https://cas-fe.github.io/Accessibility/demos/form/form-inaccessible.html).
+
+              <div class="fragment">
+
+              #### Lösung
+
+              - Verwendung von [nativen Formularelementen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select).
+              - Verwendung von [nativer Validierung](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation) oder eigener [Custom-Validierung](https://cas-fe.github.io/Accessibility/demos/form/form-aria.html) mit ARIA-Attributen.
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### _Einschub:_ ARIA
+
+              [![ARIA-Artikel im Accessibility Developer Guide](media/aria.png)](https://www.accessibility-developer-guide.com/knowledge/aria/) <!-- .element class="custom-right" -->
+
+              - Web Accessibility Initiative: **Accessible Rich Internet Applications**
+              - [W3C Recommendation](https://www.w3.org/TR/wai-aria/)
+              - Ziel: Inhalte (insbesondere dynamische) zugänglich machen, welche standardmässig nicht zugänglich sind
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### _Einschub:_ ARIA (2)
+
+              - Spezielle **Attribute** im Markup
+              - Beeinflussen nur, welche Informationen via **Accessibility-API des Browsers** zur Verfügung gestellt werden
+              - «Attaching a role gives assistive technologies information about how to handle each element.»
+              - Gewisse Elemente haben **implizite Rollen**:
+                - Beispiel: `<nav>` hat implizit die ARIA-Rolle `navigation`
+                - Sollte je nach Browser-Support trotzdem explizit hinzugefügt werden (für ältere Browser, welche `<nav>` nicht nativ unterstützen)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### g) Interaktive Elemente kommunizieren keine Zustandsänderung (2)
+
+              #### Problem
+
+              Zustand von **Custom-Dropdown** wird nicht kommuniziert.
+
+              #### Folge
+
+              Screenreader [findet aufgeklappte Inhalte nicht](https://www.zuerich.com/de).
+
+              <div class="fragment">
+
+              #### Lösung
+
+              - Verwendung von `aria-expanded` für Kommunikation des Zustandes.
+              - Platzierung des aufgeklappten Inhalts gleich nach `button`.
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### h) Interaktive Elemente werden selber gebastelt
+
+              #### Problem
+
+              Komplexe Komponenten wie **Dialoge** werden selber umgesetzt, statt native Elemente zu verwenden.
+
+              #### Folge
+
+              Screenreader findet Dialog nicht und/oder kann ihn [versehentlich verlassen](https://cas-fe.github.io/Accessibility/demos/aria/modal-inaccessible.html).
+
+              <div class="fragment">
+
+              #### Lösung
+
+              - Verwendung von [`dialog`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog).
+
+              </div>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### _Einschub:_ Vielversprechende APIs
+
+              #### Verfügbar
+
+              - [Constraint Validation API](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#the_constraint_validation_api): Erweitert die native Formular-Validierung.
+              - [CSS scroll snap](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll_snap): Ersetzt in Kombination mit [`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver) ein Custom-Carousel.
+              - [Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API): Ersetzt Custom-Tooltips/Overlays. [Spannend](https://hidde.blog/positioning-anchored-popovers/) in Kombination mit [CSS Anchor Positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Anchor_positioning). [Demo Language Switcher](https://codepen.io/backflip/pen/OPPEJpe)
+              - [Invoker Commands API](https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API): Ermöglicht Öffnen von Dialogen _ohne JavaScript_.
+
+              #### In Diskussion
+
+              - [focusgroup](https://developer.chrome.com/blog/focusgroup-rfc): Ersetzt "Roving Tabindex"-Implementationen in JavaScript.
+            </script>
+          </section>
         </section>
 
-        <section data-markdown="slides/contact.md" id="contact"></section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 6. Wie mache ich barrierefreie Projekte?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Lerne die Plattform
+
+              - Zeit, welche wir in das Lernen der Plattform investieren, ist **nachhaltig** investiert.
+              - Libraries und Frameworks sind kurzlebig und plattform-nativen Lösungen **immer unterlegen**.
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Starte zu Beginn des Projekts
+
+              - Barrierefreiheit wird oft [auf einen späteren Zeitpunkt verschoben](https://www.adnovum.com/de/blog/digitale-baustellen-vermeiden-dank-barrierefreiheit). Selten mit Erfolg.
+              - Barrierefreiheit ist grundsätzlich eine **funktionale Anforderung**.
+              - Nichtberücksichtigung bedeutet, dass bis zu [1/5](/#/3/7) der Besucher die Webseite oder Applikation nicht korrekt nutzen können. Und **kann gegen das Gesetz verstossen**.
+              - Erfolgreiche Projekte berücksichtigen Barrierefreiheit von Beginn weg.
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Schaffe gute Voraussetzungen
+
+              - **Awareness**, insbesondere in der Führung.
+              - **Knowhow**, sowohl bei UX-/Frontend-Spezialisten als auch Tester:innen. Bei Bedarf Integration externer Consultants in Projektteam.
+              - Barrierefreiheit als **Akzeptanzkriterium** für jedes Feature.
+            </script>
+          </section>
+        </section>
 
         <section>
-          <section data-markdown="slides/visual-intro.md" id="visual"></section>
-          <section data-markdown="slides/visual-contrast.md"></section>
-          <section data-markdown="slides/demos-visual.md"></section>
-          <section data-markdown="slides/visual-contrast-tools.md"></section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Danke für eure Zeit
+
+              Welche Fragen habt ihr?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Kontakt
+
+              <br>
+
+              ### ![Werner](media/werner.png) <!-- .element class="custom-avatar" --> Werner Hänggi
+
+              [info@mintaccess.ch](mailto:info@mintaccess.ch) –
+              [LinkedIn](https://www.linkedin.com/in/werner-h%C3%A4nggi-716718145/)
+
+              ### ![Thomas](media/thomas.png) <!-- .element class="custom-avatar" --> Thomas Jaggi
+
+              [thomas@responsive.ch](mailto:thomas@responsive.ch) –
+              [LinkedIn](https://linkedin.com/in/thomasjaggi) –
+              [Github](https://github.com/backflip)
+            </script>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Anhang 1: Wo finde ich barrierefreie Libraries und Informationen?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Libraries
+
+              Relevante Signale in aufsteigender Relevanz:
+              - Wird Barrierefreiheit erwähnt?
+              - Wird bei interaktiven Elementen auf **native Elemente in Kombination mit ARIA** gesetzt?
+              - Werden pro Element weniger als 100 sich widersprechende ARIA-Attribute gesetzt?
+              - Ist dokumentiert, wie Barrierefreiheit **getestet** wird?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Communities und Fachleute
+
+              - [web-a11y.slack.com](https://web-a11y.slack.com)
+              - [Adrian Roselli](https://adrianroselli.com/)
+              - [Léonie Watson](https://tink.uk/)
+              - [Geri Reid: WCAG for designers](https://gerireid.com/wcag-for-designers.html)
+            </script>
+          </section>
         </section>
       </div>
     </div>
 
-    <script src="src/index.js" type="module"></script>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>
